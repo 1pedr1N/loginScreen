@@ -1,5 +1,6 @@
 import './styles/main.css';
 import Card from './assets/image.svg';
+import Logo from './assets/logo.svg';
 const App = () => {
   return (
     <div className='container'>
@@ -16,7 +17,12 @@ const App = () => {
 
       </div>
       <div className='right-part'>
-        <h2>teste</h2>
+        <img src={Logo} alt='logo' className='logo' />
+        <p className='title'>How have you been?</p>
+        <input type='text' placeholder='Your email' />
+        <input type='password' placeholder='Password' />
+        <button className='button'>Get started</button>
+
       </div>
     </div>
   );
